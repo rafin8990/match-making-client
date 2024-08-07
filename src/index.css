@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.customScrolbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.customScrolbar::-webkit-scrollbar-track {
+  background: white;
+}
+
+.customScrolbar::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+
+
+.tableAction:nth-last-child(1) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+.publicBackground {
+  /* background-image: url('/download.jpg'); */
+  /* background-image: url('/backgroundd.png'); */
+  background-size: "cover";
+  /* height: 100%; */
+  background-repeat: no-repeat;
+}
+
+.match-commonContainer {
+  max-width: 1512px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+@media screen and (max-width: 1280px) {
+  .match-commonContainer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .match-commonContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .match-commonContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 340px) {
+  .match-commonContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
